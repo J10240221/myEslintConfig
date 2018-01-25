@@ -8,7 +8,7 @@ module.exports = {
     es6: true,
     mocha: true,
     jest: true,
-    jasmine: true
+    jasmine: true,
   },
   rules: {
     "generator-star-spacing": [0], //函数空格
@@ -19,7 +19,7 @@ module.exports = {
     "import/prefer-default-export": [0],
     "react/jsx-no-bind": [0], //当在 render() 里使用事件处理方法时, 提前在构造函数里把 this 绑定上去
     "react/prop-types": [0], //
-    "no-multi-comp": [0], // 原则上每个文件只写一个组件, 多个无状态组件可以放在单个文件中
+    "react/no-multi-comp": [0], // 原则上每个文件只写一个组件, 多个无状态组件可以放在单个文件中
     "no-multi-spaces": [0],
     "react/jsx-max-props-per-line": [0],
     "react/jsx-tag-spacing": [0],
@@ -50,14 +50,38 @@ module.exports = {
         objects: "always-multiline",
         imports: "always-multiline",
         exports: "always-multiline",
-        functions: "ignore"
-      }
+        functions: "ignore",
+      },
     ],
     "object-curly-newline": [0],
     "function-paren-newline": [0],
     "no-restricted-globals": [0],
     "require-yield": [1],
-    "compat/compat": "error"
+    "compat/compat": "error",
+    quotes: [0, "double"], //引号的问题
+    "linebreak-style": 0, //换行的问题
+    "class-methods-use-this": 0, //方法里面this改为不必须
+    "arrow-parens": [0], //箭头函数参数是否一定要括号
+    "no-debugger": [0], //可以debugger
+    //老的文件，这整个rules都记得整理下
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "no-unreachable": 1,
+    "no-use-before-define": 1,
+    "no-extra-semi": 2,
+    semi: 2,
+    "no-const-assign": 1,
+    "no-fallthrough": 0,
+    "no-empty": 0,
+    "no-mixed-spaces-and-tabs": 0,
+    "no-redeclare": 0,
+    "no-this-before-super": 1,
+
+    "constructor-super": 1,
+    curly: 0,
+    eqeqeq: 0,
+    "func-names": 0,
+    "valid-typeof": 1,
   },
   parserOptions: {
     ecmaVersion: 6,
@@ -65,14 +89,14 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
       classes: true,
-      defaultParams: true
-    }
+      defaultParams: true,
+    },
   },
   settings: {
-    polyfills: ["fetch", "promises"]
+    polyfills: ["fetch", "promises"],
   },
   //ESLint 一旦发现配置文件中有 "root": true，它就会停止在父级目录中寻找。
-  root: true
+  root: true,
 }; /*or*/ /*eslint-enable*/
 
 // 完整的配置层次结构，从最高优先级最低的优先级，如下:
