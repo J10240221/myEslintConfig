@@ -1,2 +1,3 @@
 # dependencies
-/maoshui/node_modules
+## 下面这种格式将会匹配任意子文件下的node_modules, 其实直接node_modules/也是一样的效果
+**/node_modules
