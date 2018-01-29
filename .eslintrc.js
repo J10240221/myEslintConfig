@@ -99,8 +99,7 @@ module.exports = {
   // root: true,
 };
 
-// 完整的配置层次结构，从最高优先级最低的优先级，如下:
-
+/********** 完整的配置层次结构，从最高优先级最低的优先级，如下:**********/
 // 老大：行内配置
 // /*eslint-disable*/ or /*eslint-enable*/
 // /*global*/
@@ -117,3 +116,12 @@ module.exports = {
 // 与要检测的文件在同一目录下的 .eslintrc.* 或 package.json 文件
 // 继续在父级目录寻找 .eslintrc 或 package.json文件，直到根目录（包括根目录）或直到发现一个有"root": true的配置。
 // 如果不是（1）到（3）中的任何一种情况，退回到 ~/.eslintrc 中自定义的默认配置。
+
+/****************各类语法****************/
+// 1行内的：
+//   // eslint-disable-line                 取消此行的检查
+//   // eslint-disable-next-line            取消下一行的检查
+// 2整个文件的：(eslint 后面的那个 filed 就是页面上红色波浪线提示的filed)
+//   /*eslint-disable*/
+//   /*eslint camelcase: 0*/                取消驼峰限制
+//   /*eslint no-unused-expressions: 0*/    取消表达式的错误
