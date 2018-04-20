@@ -82,6 +82,7 @@ module.exports = {
     eqeqeq: 0,
     "func-names": 0,
     "valid-typeof": 1,
+    "space-before-function-paren": 0, //函数名前的空格不必须
   },
   parserOptions: {
     ecmaVersion: 6,
