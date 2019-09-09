@@ -64,13 +64,13 @@ module.exports = {
     "arrow-parens": [0], //箭头函数参数是否一定要括号
     "no-debugger": [0], //可以debugger
     //老的文件，这整个rules都记得整理下
-    "no-undef": 1,
-    "no-unused-vars": 1,
+    "no-undef": 2,
+    "no-unused-vars": 2,
     "no-unreachable": 1,
     "no-use-before-define": 1,
     "no-extra-semi": 2,
     semi: 2,
-    "no-const-assign": 1,
+    "no-const-assign": 2,
     "no-fallthrough": 0,
     "no-empty": 0,
     "no-mixed-spaces-and-tabs": 0,
@@ -83,6 +83,14 @@ module.exports = {
     "func-names": 0,
     "valid-typeof": 1,
     "space-before-function-paren": 0, //函数名前的空格不必须
+    "no-underscore-dangle": 0, // 可以 _ 前缀
+    indent: 0, // 不然prettier 有时候冲突
+    "react/sort-comp": 2, // TODO:临时取消，后面加上18.6.6
+    "prefer-destructuring": 0, // TODO:临时取消，后面加上18.6.6
+    "react/jsx-indent": 0, // 由于他人的代码全面飘红，难受，反正我都是用代码格式化工具的
+    "react/jsx-wrap-multilines": 0, // 同上
+    "no-tabs": 0, // 同上
+    "max-len": 0, // 同上
   },
   parserOptions: {
     ecmaVersion: 6,
