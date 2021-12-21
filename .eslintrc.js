@@ -1,3 +1,13 @@
+/* prettier-ignore */
+
+/**
+ * 无法生效的 问题在于， eslint 是全局 安装的，其他的依赖包 也是，结果 就是 找不到包
+ * const absPass = "/usr/local/lib/node_modules";
+ * 报错 ESLint: Failed to load config "airbnb" to extend from
+ * 其实 就是 extends:[airbnb] 改成 下面的 绝对路径就行，
+ * `${absPass/eslint-config-airbnb}`
+ */
+
 module.exports = {
   extends: [
     "airbnb",

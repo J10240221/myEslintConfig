@@ -1,0 +1,40 @@
+{
+  "name": "myeslintconfig",
+  "version": "1.0.0",
+  "description": "eslint config ",
+  "main": ".eslintrc.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/J10240221/myEslintConfig.git",
+  "keywords": [
+    "my",
+    "eslint",
+    "global",
+    "config"
+  ],
+  "author": "huazhilin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J10240221/myEslintConfig/issues"
+  },
+  "homepage": "https://github.com/J10240221/myEslintConfig#readme",
+  "private": true
+}
